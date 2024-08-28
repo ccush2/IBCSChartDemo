@@ -1,0 +1,60 @@
+.ibcs-chart {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.ibcs-chart .recharts-cartesian-axis-tick-value {
+  fill: #333333;
+}
+
+.ibcs-chart .recharts-legend-item-text {
+  fill: #333333;
+}
+
+.ibcs-chart .recharts-tooltip-label {
+  font-weight: bold;
+}
+
+.ibcs-chart .recharts-tooltip-item {
+  padding: 2px 0;
+}
+
+.ibcs-chart .recharts-bar-rectangle {
+  stroke-width: 1;
+}
+
+.ibcs-chart-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.ibcs-chart-subtitle {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.custom-legend-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.custom-legend {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.custom-legend li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.custom-legend svg {
+  margin-right: 5px;
+}

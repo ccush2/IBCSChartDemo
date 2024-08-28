@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import IBCSChart from "./IBCSChart";
+import { DataPoint } from "./types";
 
-function App() {
+const App: React.FC = () => {
+  const data: DataPoint[] = [
+    { period: "Jan", actual: 1000, budget: 1200 },
+    { period: "Feb", actual: 1500, budget: 1400 },
+    { period: "Mar", actual: 1300, budget: 1300 },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IBCSChart
+        data={data}
+        title="Monthly Sales Performance"
+        subtitle="Actual vs Budget (in $1000s)"
+      />
     </div>
   );
-}
+};
 
 export default App;
